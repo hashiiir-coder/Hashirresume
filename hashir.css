@@ -1,0 +1,141 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #edeff2;
+    color: #902929;
+    line-height: 1.6;
+    padding: 30px 15px;
+}
+
+/* Resume container */
+.resume {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 45px 55px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Header */
+header {
+    text-align: center;
+    border-bottom: 3px solid #163a5f;
+    padding-bottom: 22px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    color: #1637bb;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+header h3 {
+    color: #555;
+    font-weight: 500;
+    margin: 5px 0 12px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 13px;
+}
+
+.links {
+    margin-top: 10px;
+}
+
+.links a {
+    color: #1769aa;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 23px;
+}
+
+section h2 {
+    color: #163a5f;
+    font-size: 17px;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+section p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* Lists */
+ul {
+    padding-left: 22px;
+    font-size: 14px;
+}
+
+.skills li {
+    margin-bottom: 5px;
+}
+
+/* Experience and projects */
+.item {
+    margin-bottom: 15px;
+}
+
+.item h3 {
+    font-size: 15px;
+    color: #222;
+}
+
+.date {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .resume {
+        padding: 25px 20px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* Print resume */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .resume {
+        box-shadow: none;
+        max-width: 100%;
+        padding: 20px;
+    }
+}
